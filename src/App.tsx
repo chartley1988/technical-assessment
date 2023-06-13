@@ -10,7 +10,6 @@ import {
   OrderedList,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
