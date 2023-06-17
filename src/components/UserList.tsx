@@ -22,7 +22,7 @@ function UserList({
 }: any) {
 	useEffect(() => {
 		getUsersData(user);
-	}, []);
+	}, [getUsersData, user]);
 
 	function deleteHandler(userProfile: User) {
 		fetch(`http://localhost:3000/api/v1/users/${userProfile.id}`, {

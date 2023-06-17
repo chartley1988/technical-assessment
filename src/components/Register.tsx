@@ -1,18 +1,7 @@
-import {
-	Container,
-	Input,
-	FormControl,
-	FormLabel,
-	Flex,
-	Button,
-	FormHelperText,
-} from '@chakra-ui/react';
+import { Input, FormControl, FormLabel, Flex, Button } from '@chakra-ui/react';
 import { useState } from 'react';
 
-function Register({
-	registerUser,
-	getUsersData,
-}: any) {
+function Register({ registerUser, getUsersData }: any) {
 	const [FirstName, setFirstName] = useState('');
 	const [LastName, setLastName] = useState('');
 	const [Email, setEmail] = useState('');

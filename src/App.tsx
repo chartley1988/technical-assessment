@@ -2,18 +2,11 @@ import * as React from "react"
 import {
   ChakraProvider,
   Box,
-  Text,
   VStack,
   Grid,
   theme,
-  ListItem,
-  OrderedList,
-  Container,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import Register from "./components/Register"
-import LoginContainer from "./components/AdminPanel"
-import Login from "./components/Login"
 import '../src/styles/global.css'
 import AdminPanel from "./components/AdminPanel"
 
