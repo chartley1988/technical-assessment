@@ -48,7 +48,7 @@ function AdminPanel() {
 				console.log(`Error: ${error}`);
 			})
 			.finally(() => {
-				getUsersData(user);
+				getUsersData();
 			});
 	}
 
@@ -78,7 +78,7 @@ function AdminPanel() {
 			});
 	}
 
-	function getUsersData(user: any) {
+	function getUsersData() {
 		fetch('http://localhost:3000/api/v1/users?page=1&limit=20/', {
 			method: 'GET',
 			headers: {

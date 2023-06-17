@@ -21,8 +21,8 @@ function UserList({
 	token
 }: any) {
 	useEffect(() => {
-		getUsersData(user);
-	}, [getUsersData, user]);
+		getUsersData();
+	}, []);
 
 	function deleteHandler(userProfile: User) {
 		fetch(`http://localhost:3000/api/v1/users/${userProfile.id}`, {
@@ -38,7 +38,7 @@ function UserList({
 				console.log(error);
 			})
 			.finally(() => {
-				getUsersData(user);
+				getUsersData();
 			});
 	}
 
